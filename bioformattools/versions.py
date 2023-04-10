@@ -7,6 +7,7 @@ versions = [
         "number": "0.0.1",
         "features": [
             "1. Separating code from ToolBiox",
+            "2. debug",
         ],
     },
 ]

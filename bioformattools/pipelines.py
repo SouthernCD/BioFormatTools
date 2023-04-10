@@ -57,6 +57,10 @@ class Gff2Gtf(object):
             w.write("#gtf-version")
             with open(self.input) as r:
                 for line in tqdm(r):
+                    # skip empty line
+                    if not line.strip():
+                        continue
+
                     if line.startswith("#"):
                         w.write(line)
                         continue
@@ -254,6 +258,10 @@ class Gtf2Gff(object):
             with open(self.input) as r:
                 for line in r:
                     if line.startswith("#"):
+                        continue
+
+                    # skip empty line
+                    if not line.strip():
                         continue
 
                     lines = line.split("\t")
