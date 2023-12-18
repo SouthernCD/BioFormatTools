@@ -1,6 +1,6 @@
 # coding utf8
 import setuptools
-from ocftools.versions import get_versions
+from bioformattools.versions import get_versions
 
 with open('README.md') as f:
     LONG_DESCRIPTION = f.read()
