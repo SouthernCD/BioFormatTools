@@ -2,7 +2,7 @@ import os
 import re
 from tqdm import tqdm
 from toolbiox.lib.common.util import printer_list
-from toolbiox.api.common.genome.blast import outfmt5_read_big, keep_outfmt6_info, outfmt5_complete
+from toolbiox.api.common.mapping.blast import outfmt5_read_big, keep_outfmt6_info, outfmt5_complete
 from toolbiox.lib.common.fileIO import tsv_file_dict_parse
 from pyfaidx import Fasta
 from Bio.Seq import Seq
